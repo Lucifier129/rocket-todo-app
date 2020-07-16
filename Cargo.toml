@@ -1,0 +1,20 @@
+[package]
+name = "hello-rocket"
+version = "0.1.0"
+authors = ["yj_gu <yj_gu@ctrip.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+diesel = "1.4.5"
+rocket = "0.4.5"
+serde = { version = "1.0.114", features = ["derive"] }
+serde_json = "1.0.56"
+uuid = { version = "0.8", features = ["serde", "v4"] }
+rocket_cors = "0.5.2"
+
+[dependencies.rocket_contrib]
+version = "0.4.5"
+default-features = false
+features = ["json", "serve", "uuid"]
